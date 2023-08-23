@@ -17,4 +17,10 @@ function letterFinder(word, match) {
 
 letterFinder(1, 2);
 console.log("");
+letterFinder([],[]);
+console.log("");
 letterFinder("cat", "c");
+
+//testing
+//throw new Error("This is an error");
+console.log("Hello");

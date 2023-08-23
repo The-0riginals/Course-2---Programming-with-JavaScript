@@ -8,4 +8,13 @@ function letterFinder(word, match) {
     }
 }
 
+function find(sence, word) {
+ if (sence.includes(word)) {
+        console.log('Found the', "'"+word+"'", 'at', sence.indexOf(word));
+    } else {
+        console.log('---No match found');
+    }
+}
+
 letterFinder("test", "t");
+find("test will be on tomorrow", "will");
