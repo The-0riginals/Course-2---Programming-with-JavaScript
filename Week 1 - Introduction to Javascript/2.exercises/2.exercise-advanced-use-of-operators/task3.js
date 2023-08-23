@@ -5,5 +5,5 @@ var test2 = num2 % 2;
 var result1 = test1 == 0;
 var result2 = test2 == 0;
 
-console.log("Is", num1, "an even number?", result1);
+console.log("Is", num1, "an even number?", test1%2 == 0);
 console.log("Is", num2, "an even number?", result2);

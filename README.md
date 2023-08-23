@@ -1,8 +1,7 @@
 # Programming with JavaScript
 
-<img src="../meta-logo.png" width=150>
 
-- This directory contains all of my assignments from the Coursera Course: [Programming with JavaScript](https://www.coursera.org/learn/programming-with-javascript?specialization=meta-front-end-developer)
+- This repos contains all of my assignments from the Coursera Course: [Programming with JavaScript](https://www.coursera.org/learn/programming-with-javascript?specialization=meta-front-end-developer)
 
 ## Table of Content
 
