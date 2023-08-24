@@ -1,11 +1,21 @@
 // Task 1: Build a function-based console log message generator
 function consoleStyler(color, background, fontSize, txt) {
     var message = "%c" + txt;
-    var style = `color: ${color};`;
+    var style = `color: ${color};`; //${} used to insert variables into strings
     style += `background: ${background};`;
     style += `font-size: ${fontSize};`;
     console.log(message, style);
 }
+/*
+
+In Javascript the ${} is used to insert a variable to a string.
+var foo = "cheese";
+console.log(`We want to eat ${foo}!`); // This needs the grave accent (`)
+// Outputs "We want to eat cheese!"
+console.log("We want to eat " + foo + "!"); 
+// Outputs "We want to eat cheese!"
+
+*/
 
 // Task 2: Build another console log message generator
 function celebrateStyler(reason) {
@@ -28,6 +38,17 @@ function styleAndCelebrate(color, background, fontSize, txt, reason) {
     consoleStyler(color, background, fontSize, txt);
     celebrateStyler(reason);
 }
+/* a better way to do it
+function styleAndCelebrate(consoleStyler,celebrateStyler) {
+}
+
+styleAndCelebrate(consoleStyler('#1d5c63', '#ede6db', '40px', 'Congrats!'),celebrateStyler('birthday'));
+*/
+
+
+
 
 // Call styleAndCelebrate
 styleAndCelebrate('ef7c8e', 'fae8e0', '30px', 'You made it!', 'champions');
+
+

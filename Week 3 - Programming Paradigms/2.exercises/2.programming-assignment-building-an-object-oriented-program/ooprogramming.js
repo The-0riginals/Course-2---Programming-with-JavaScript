@@ -18,13 +18,14 @@ class Person {
 // Task 2: Code a Worker class
 class Worker extends Person {
     constructor(name, age, energy, xp = 10, hourlyWage = 10) {
-        super(name, age, energy);
+        super(name, age, energy); // super() calls the constructor of the parent class
         this.xp = xp;
         this.hourlyWage = hourlyWage;
     }
 
     goToWork() {
         this.xp += 10;
+        this.energy -= 100;
     }
 }
 
@@ -41,3 +42,8 @@ function manager() {
     manager.doSomethingFun();
     return manager;
 }
+
+i = intern();
+m = manager();
+console.log(i);
+console.log(m);

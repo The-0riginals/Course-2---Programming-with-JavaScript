@@ -14,7 +14,7 @@ const animal = {
     canJump: true
 };
 
-const bird = Object.create(animal);
+const bird = Object.create(animal); // bird inherits from animal
 bird.canFly = true;
 bird.hasFeathers = true;
 
