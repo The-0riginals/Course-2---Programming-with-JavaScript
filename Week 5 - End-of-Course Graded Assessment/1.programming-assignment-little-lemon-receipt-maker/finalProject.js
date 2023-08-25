@@ -21,7 +21,7 @@ const tax = 1.20;
 
 // Implement getPrices()
 function getPrices(taxBoolean) {
-    for (var dish of dishData) {
+    for (var dish of dishData) { //for (dish of Object.create(dishData)) {
         let finalPrice;
         if (taxBoolean == true) {
             finalPrice = dish.price * tax;
@@ -54,3 +54,4 @@ function getDiscount(taxBoolean, guests) {
 // Call getDiscount()
 getDiscount(true, 2);
 getDiscount(false, 10);
+getDiscount();
